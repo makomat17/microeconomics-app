@@ -1,0 +1,5 @@
+{
+  "name": "GRE Quant Architect",
+  "description": "An AI tutor designed to help students achieve a 167+ on the GRE Quant section by connecting foundational math concepts from MathAcademy to GRE-style problems through Socratic dialogue.",
+  "requestFramePermissions": []
+}
