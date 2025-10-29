@@ -18,11 +18,11 @@ const App: React.FC = () => {
   useEffect(() => {
     const initChat = () => {
       try {
-        if (!process.env.API_KEY) {
+        if (!import.meta.env.VITE_GEMINI_API_KEY) {
           throw new Error("API_KEY is not configured.");
         }
         // FIX: Use the correct class name GoogleGenAI for instantiation.
-        const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+        const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
         const chatSession = ai.chats.create({
           model: 'gemini-2.5-flash',
           config: {
